@@ -11,7 +11,7 @@ int validate_arguments(int argc, char *argv[])
     if (argc != 4)
     {
         printf(RED "Error : Insufficient Arguments.\n");
-        printf(RED "Usage : ./a.out  <Operator1> <operand> <operator2>\n");
+        printf(RED "Usage : ./a.out   <Operand1> <operator> <operand2>\n");
         printf(RED "For Addition '+'.\nFor Subtraction '-'\nFor Multiplication 'x'\nFor Division '/'\n");
         return FAILURE;
     }
