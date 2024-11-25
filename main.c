@@ -6,7 +6,7 @@
 #include "apc.h"
 #include "ctype.h"
 
-int swap = 0, sign = 0;
+int swap = 0, sign = 0, ok = 0;
 
 int main(int argc, char *argv[])
 {
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 		case '+':
 			addition(&head1, &tail1, &head2, &tail2, &headR);
 
-			if (compare_data(head1, head2) == FAILURE && (argv[1][0] == '-' && argv[3][0] == '-'))
+			if (compare_data(head1, head2) == FAILURE && (argv[1][0] == '-' && argv[3][0] == '-') && ok)
 				;
 			else if (sign)
 				printf(WHITE "-");
