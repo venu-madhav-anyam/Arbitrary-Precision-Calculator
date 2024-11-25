@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-extern int sign;
+extern int sign, ok;
 
 int validate_arguments(int argc, char *argv[])
 {
@@ -121,7 +121,8 @@ int operation_valid(char *opt, char *argv[])
             if (argv[1][0] == '-')
                 sign = 1;
         }
-
+        ok = 1;
+        
         return SUCCESS;
     }
 
