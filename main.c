@@ -11,7 +11,7 @@ int swap = 0, sign = 0, ok = 0;
 int main(int argc, char *argv[])
 {
 	/* Declare the pointers */
-	Dlist *head1, *tail1, *head2, *tail2, *headR, *t;
+	Dlist *head1 = NULL, *tail1 = NULL, *head2 = NULL, *tail2 = NULL, *headR = NULL, *t = NULL;
 	char option, operator, * input;
 
 	// Input validation
